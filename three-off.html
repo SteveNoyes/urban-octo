@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* CLIENT-SAFE RESPONSIVE RULES */
+@media only screen and (max-width:600px) {
+  table[class="wrapper"] {
+    width: 100% !important;
+  }
+
+  td[class="mobile-hide"] {
+    display: none !important;
+  }
+
+  td[class="stack-column"],
+  table[class="stack-column"] {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  td[class="cell-label"],
+  td[class="cell-value"] {
+    display: inline-block !important;
+    width: 48% !important;
+    vertical-align: top !important;
+  }
+
+  td[class="cell-label"] {
+    text-align: right !important;
+    font-weight: bold !important;
+    color: #333333 !important;
+  }
+
+  td[class="cell-value"] {
+    text-align: left !important;
+  }
+}
+</style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f7f7f7;">
+  <center style="width:100%; background-color:#f7f7f7;">
+    <table width="600" border="0" cellspacing="0" cellpadding="0" class="wrapper" style="margin:0 auto; background:#ffffff; font-family:Arial, sans-serif; color:#333333;">
+      <tr>
+        <td style="padding:20px;">
+
+          <!-- Desktop Header -->
+          <table width="100%" border="0" cellspacing="0" cellpadding="8" style="border-collapse:collapse;">
+            <thead>
+              <tr bgcolor="#f0f0f0">
+                <td style="font-weight:bold;">Name</td>
+                <td style="font-weight:bold;">Email</td>
+                <td style="font-weight:bold;">Status</td>
+                <td style="font-weight:bold;">Date</td>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr>
+                <td colspan="4" class="stack-column" style="border-bottom:1px solid #e0e0e0;">
+
+                  <!-- MOBILE ROW: Name -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                      <td class="cell-label">Name</td>
+                      <td class="cell-value">John Doe</td>
+                    </tr>
+                  </table>
+
+                  <!-- MOBILE ROW: Email -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                      <td class="cell-label">Email</td>
+                      <td class="cell-value">john@example.com</td>
+                    </tr>
+                  </table>
+
+                  <!-- MOBILE ROW: Status -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                      <td class="cell-label">Status</td>
+                      <td class="cell-value">Active</td>
+                    </tr>
+                  </table>
+
+                  <!-- MOBILE ROW: Date -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                      <td class="cell-label">Date</td>
+                      <td class="cell-value">Oct 7, 2025</td>
+                    </tr>
+                  </table>
+
+                  <!-- DESKTOP ROW -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="8" class="mobile-hide" style="border-collapse:collapse;">
+                    <tr>
+                      <td>John Doe</td>
+                      <td>john@example.com</td>
+                      <td>Active</td>
+                      <td>Oct 7, 2025</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Row 2 -->
+              <tr>
+                <td colspan="4" class="stack-column" style="border-bottom:1px solid #e0e0e0;">
+                  <!-- MOBILE ROW: Name -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                      <td class="cell-label">Name</td>
+                      <td class="cell-value">Jane Smith</td>
+                    </tr>
+                  </table>
+
+                  <!-- MOBILE ROW: Email -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                      <td class="cell-label">Email</td>
+                      <td class="cell-value">jane@example.com</td>
+                    </tr>
+                  </table>
+
+                  <!-- MOBILE ROW: Status -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                      <td class="cell-label">Status</td>
+                      <td class="cell-value">Pending</td>
+                    </tr>
+                  </table>
+
+                  <!-- MOBILE ROW: Date -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                    <tr>
+                      <td class="cell-label">Date</td>
+                      <td class="cell-value">Oct 5, 2025</td>
+                    </tr>
+                  </table>
+
+                  <!-- DESKTOP ROW -->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="8" class="mobile-hide" style="border-collapse:collapse;">
+                    <tr>
+                      <td>Jane Smith</td>
+                      <td>jane@example.com</td>
+                      <td>Pending</td>
+                      <td>Oct 5, 2025</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
