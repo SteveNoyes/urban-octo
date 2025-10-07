@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Email Template</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .desktop-table {
+                display: none !important;
+            }
+            
+            .mobile-table {
+                display: table !important;
+                width: 100% !important;
+            }
+            
+            .mobile-row-spacer {
+                height: 20px !important;
+            }
+        }
+        
+        @media only screen and (min-width: 601px) {
+            .mobile-table {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0;">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f4f4f4">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="max-width: 600px;">
+                    <tr>
+                        <td style="padding: 30px;">
+                            
+                            <!-- Desktop Table View -->
+                            <table class="desktop-table" width="100%" border="0" cellpadding="10" cellspacing="0" style="border: 1px solid #dddddd;">
+                                <thead>
+                                    <tr style="background-color: #f8f8f8;">
+                                        <th style="border: 1px solid #dddddd; padding: 12px; text-align: left; font-weight: bold; color: #333333;">Name</th>
+                                        <th style="border: 1px solid #dddddd; padding: 12px; text-align: left; font-weight: bold; color: #333333;">Email</th>
+                                        <th style="border: 1px solid #dddddd; padding: 12px; text-align: left; font-weight: bold; color: #333333;">Phone</th>
+                                        <th style="border: 1px solid #dddddd; padding: 12px; text-align: left; font-weight: bold; color: #333333;">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">John Smith</td>
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">john@example.com</td>
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">555-0123</td>
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">Active</td>
+                                    </tr>
+                                    <tr style="background-color: #f8f8f8;">
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">Jane Doe</td>
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">jane@example.com</td>
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">555-0124</td>
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">Bob Johnson</td>
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">bob@example.com</td>
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">555-0125</td>
+                                        <td style="border: 1px solid #dddddd; padding: 12px; color: #666666;">Active</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <!-- Mobile Table View -->
+                            <table class="mobile-table" width="100%" border="0" cellpadding="0" cellspacing="0" style="display: none;">
+                                <!-- Row 1 -->
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0; color: #666666;">John Smith</td>
+                                    <td width="40%" style="padding: 8px 0 8px 15px; text-align: right; font-weight: bold; color: #333333;">Name:</td>
+                                </tr>
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0; color: #666666;">john@example.com</td>
+                                    <td width="40%" style="padding: 8px 0 8px 15px; text-align: right; font-weight: bold; color: #333333;">Email:</td>
+                                </tr>
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0; color: #666666;">555-0123</td>
+                                    <td width="40%" style="padding: 8px 0 8px 15px; text-align: right; font-weight: bold; color: #333333;">Phone:</td>
+                                </tr>
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0 15px 0; color: #666666; border-bottom: 1px solid #dddddd;">Active</td>
+                                    <td width="40%" style="padding: 8px 0 15px 15px; text-align: right; font-weight: bold; color: #333333; border-bottom: 1px solid #dddddd;">Status:</td>
+                                </tr>
+                                <tr class="mobile-row-spacer">
+                                    <td colspan="2" style="height: 20px;"></td>
+                                </tr>
+                                
+                                <!-- Row 2 -->
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0; color: #666666;">Jane Doe</td>
+                                    <td width="40%" style="padding: 8px 0 8px 15px; text-align: right; font-weight: bold; color: #333333;">Name:</td>
+                                </tr>
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0; color: #666666;">jane@example.com</td>
+                                    <td width="40%" style="padding: 8px 0 8px 15px; text-align: right; font-weight: bold; color: #333333;">Email:</td>
+                                </tr>
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0; color: #666666;">555-0124</td>
+                                    <td width="40%" style="padding: 8px 0 8px 15px; text-align: right; font-weight: bold; color: #333333;">Phone:</td>
+                                </tr>
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0 15px 0; color: #666666; border-bottom: 1px solid #dddddd;">Pending</td>
+                                    <td width="40%" style="padding: 8px 0 15px 15px; text-align: right; font-weight: bold; color: #333333; border-bottom: 1px solid #dddddd;">Status:</td>
+                                </tr>
+                                <tr class="mobile-row-spacer">
+                                    <td colspan="2" style="height: 20px;"></td>
+                                </tr>
+                                
+                                <!-- Row 3 -->
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0; color: #666666;">Bob Johnson</td>
+                                    <td width="40%" style="padding: 8px 0 8px 15px; text-align: right; font-weight: bold; color: #333333;">Name:</td>
+                                </tr>
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0; color: #666666;">bob@example.com</td>
+                                    <td width="40%" style="padding: 8px 0 8px 15px; text-align: right; font-weight: bold; color: #333333;">Email:</td>
+                                </tr>
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0; color: #666666;">555-0125</td>
+                                    <td width="40%" style="padding: 8px 0 8px 15px; text-align: right; font-weight: bold; color: #333333;">Phone:</td>
+                                </tr>
+                                <tr>
+                                    <td width="60%" style="padding: 8px 0 15px 0; color: #666666; border-bottom: 1px solid #dddddd;">Active</td>
+                                    <td width="40%" style="padding: 8px 0 15px 15px; text-align: right; font-weight: bold; color: #333333; border-bottom: 1px solid #dddddd;">Status:</td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
