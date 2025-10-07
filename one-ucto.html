@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* MOBILE STYLES */
+@media only screen and (max-width:600px) {
+  .mobile-container {
+    width: 100% !important;
+  }
+  .mobile-hide {
+    display: none !important;
+  }
+  .mobile-stack {
+    display: block !important;
+    width: 100% !important;
+  }
+  .mobile-row {
+    display: flex !important;
+    flex-direction: row-reverse !important; /* Header (right), Data (left) */
+    justify-content: space-between !important;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+  }
+  .mobile-label, .mobile-value {
+    display: inline-block;
+    width: 48% !important;
+    vertical-align: top;
+    text-align: left !important;
+  }
+  .mobile-label {
+    font-weight: bold;
+    text-align: right !important;
+    color: #333;
+  }
+}
+</style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f7f7f7;">
+  <center style="width:100%; background-color:#f7f7f7;">
+    <table width="600" border="0" cellspacing="0" cellpadding="0" class="mobile-container" style="margin:0 auto; background:#ffffff; font-family:Arial, sans-serif; color:#333333;">
+      <tr>
+        <td style="padding:20px;">
+
+          <!-- Table Header (Desktop Only) -->
+          <table width="100%" border="0" cellspacing="0" cellpadding="8" style="border-collapse:collapse;">
+            <thead class="mobile-hide" style="background-color:#f0f0f0;">
+              <tr>
+                <th align="left" style="font-weight:bold;">Name</th>
+                <th align="left" style="font-weight:bold;">Email</th>
+                <th align="left" style="font-weight:bold;">Status</th>
+                <th align="left" style="font-weight:bold;">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr class="mobile-stack">
+                <td class="mobile-row">
+                  <div class="mobile-label">Name</div>
+                  <div class="mobile-value">John Doe</div>
+                </td>
+                <td class="mobile-row">
+                  <div class="mobile-label">Email</div>
+                  <div class="mobile-value">john@example.com</div>
+                </td>
+                <td class="mobile-row">
+                  <div class="mobile-label">Status</div>
+                  <div class="mobile-value">Active</div>
+                </td>
+                <td class="mobile-row">
+                  <div class="mobile-label">Date</div>
+                  <div class="mobile-value">Oct 7, 2025</div>
+                </td>
+              </tr>
+
+              <!-- Row 2 -->
+              <tr class="mobile-stack">
+                <td class="mobile-row">
+                  <div class="mobile-label">Name</div>
+                  <div class="mobile-value">Jane Smith</div>
+                </td>
+                <td class="mobile-row">
+                  <div class="mobile-label">Email</div>
+                  <div class="mobile-value">jane@example.com</div>
+                </td>
+                <td class="mobile-row">
+                  <div class="mobile-label">Status</div>
+                  <div class="mobile-value">Pending</div>
+                </td>
+                <td class="mobile-row">
+                  <div class="mobile-label">Date</div>
+                  <div class="mobile-value">Oct 5, 2025</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
